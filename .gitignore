@@ -1,2 +1,6 @@
 .venv
 artifacts/*
+.env
+*.env
+.env.local
+.env.*.local

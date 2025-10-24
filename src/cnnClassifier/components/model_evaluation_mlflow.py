@@ -5,6 +5,11 @@ import mlflow.keras
 from urllib.parse import urlparse
 from cnnClassifier.entity.config_entity import EvaluationConfig
 from cnnClassifier.utils.common import save_json
+import os
+from dotenv import load_dotenv
+
+# Load environment variables
+load_dotenv()
 
 
 class Evaluation:
@@ -54,7 +59,24 @@ class Evaluation:
 
 
     def log_into_mlflow(self):
-        mlflow.set_registry_uri(self.config.mlflow_uri)
+        # Set MLflow credentials from environment variables
+        mlflow_uri = os.getenv("MLFLOW_TRACKING_URI")
+        mlflow_username = os.getenv("MLFLOW_TRACKING_USERNAME")
+        mlflow_password = os.getenv("MLFLOW_TRACKING_PASSWORD")
+
+        if not mlflow_uri:
+            raise ValueError("MLFLOW_TRACKING_URI not found in environment variables")
+
+        # Set MLflow tracking URI and credentials
+        mlflow.set_tracking_uri(mlflow_uri)
+
+        # Set DagsHub credentials for authentication
+        if mlflow_username and mlflow_password:
+            os.environ["MLFLOW_TRACKING_USERNAME"] = mlflow_username
+            os.environ["MLFLOW_TRACKING_PASSWORD"] = mlflow_password
+
+        print(f"MLflow tracking URI: {mlflow.get_tracking_uri()}")
+
         tracking_url_type_store = urlparse(mlflow.get_tracking_uri()).scheme
 
         with mlflow.start_run():
@@ -72,3 +94,5 @@ class Evaluation:
                 mlflow.keras.log_model(self.model, "model", registered_model_name="VGG16Model")
             else:
                 mlflow.keras.log_model(self.model, "model")
+
+        print("MLflow logging completed successfully!")

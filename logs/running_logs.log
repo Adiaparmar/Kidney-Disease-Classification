@@ -190,3 +190,191 @@ x==========x]
 [2025-10-25 00:22:38,576: INFO: main: >>>>>> Stage Model Evaluation with MLflow Stage completed <<<<<<
 
 x==========x]
+[2025-10-25 11:46:36,014: INFO: main: >>>>>> Stage Data Ingestion Stage started <<<<<<]
+[2025-10-25 11:46:36,034: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2025-10-25 11:46:36,053: INFO: common: yaml file: params.yaml loaded successfully]
+[2025-10-25 11:46:36,054: INFO: common: created directory at: artifacts]
+[2025-10-25 11:46:36,055: INFO: common: created directory at: artifacts\data_ingestion]
+[2025-10-25 11:46:36,057: INFO: data_ingestion: Downloading file from :[https://drive.google.com/file/d/1h1jzZ307vV6pKkaERxFF4jn9wne9XHp7/view?usp=sharing] to :[artifacts/data_ingestion/data.zip]]
+[2025-10-25 11:51:13,966: INFO: data_ingestion: Download data from [https://drive.google.com/file/d/1h1jzZ307vV6pKkaERxFF4jn9wne9XHp7/view?usp=sharing] to :[artifacts/data_ingestion/data.zip] ]
+[2025-10-25 11:51:37,461: INFO: main: >>>>>> Stage Data Ingestion Stage completed <<<<<<
+
+x==========x]
+[2025-10-25 11:51:37,462: INFO: main: >>>>>> Stage Prepare Base Model Stage started <<<<<<]
+[2025-10-25 11:51:37,465: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2025-10-25 11:51:37,469: INFO: common: yaml file: params.yaml loaded successfully]
+[2025-10-25 11:51:37,472: INFO: common: created directory at: artifacts]
+[2025-10-25 11:51:37,475: INFO: common: created directory at: artifacts/prepare_base_model]
+[2025-10-25 11:51:38,907: WARNING: saving_utils: Compiled the loaded model, but the compiled metrics have yet to be built. `model.compile_metrics` will be empty until you train or evaluate the model.]
+[2025-10-25 11:51:39,433: INFO: main: >>>>>> Stage Prepare Base Model Stage completed <<<<<<
+
+x==========x]
+[2025-10-25 11:51:39,433: INFO: main: >>>>>> Stage Model Training Stage started <<<<<<]
+[2025-10-25 11:51:39,437: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2025-10-25 11:51:39,440: INFO: common: yaml file: params.yaml loaded successfully]
+[2025-10-25 11:51:39,442: INFO: common: created directory at: artifacts]
+[2025-10-25 11:51:39,442: INFO: common: created directory at: artifacts\training]
+[2025-10-25 12:50:23,677: INFO: main: >>>>>> Stage Model Training Stage completed <<<<<<
+
+x==========x]
+[2025-10-25 12:50:23,677: INFO: main: >>>>>> Stage Model Evaluation with MLflow Stage started <<<<<<]
+[2025-10-25 12:50:23,697: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2025-10-25 12:50:23,715: INFO: common: yaml file: params.yaml loaded successfully]
+[2025-10-25 12:50:23,717: INFO: common: created directory at: artifacts]
+[2025-10-25 12:57:03,404: INFO: common: json file saved at: scores.json]
+[2025-10-25 12:57:03,405: INFO: common: json file saved at: scores.json]
+[2025-10-25 12:57:07,086: WARNING: save: Found untraced functions such as _jit_compiled_convolution_op, _jit_compiled_convolution_op, _jit_compiled_convolution_op, _jit_compiled_convolution_op, _jit_compiled_convolution_op while saving (showing 5 of 14). These functions will not be directly callable after loading.]
+[2025-10-25 12:57:07,502: INFO: builder_impl: Assets written to: C:\Users\adiap\AppData\Local\Temp\tmpm1kr0ty8\model\data\model\assets]
+[2025-10-25 12:58:17,228: INFO: main: >>>>>> Stage Model Evaluation with MLflow Stage completed <<<<<<
+
+x==========x]
+[2025-12-07 19:23:03,780: INFO: stage_01_data_ingestion: >>>>>> Stage Data Ingestion Stage started <<<<<<]
+[2025-12-07 19:23:03,783: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2025-12-07 19:23:03,784: INFO: common: yaml file: params.yaml loaded successfully]
+[2025-12-07 19:23:03,784: INFO: common: created directory at: artifacts]
+[2025-12-07 19:23:03,785: INFO: common: created directory at: artifacts\data_ingestion]
+[2025-12-07 19:23:03,785: INFO: data_ingestion: Downloading file from :[https://drive.google.com/file/d/1h1jzZ307vV6pKkaERxFF4jn9wne9XHp7/view?usp=sharing] to :[artifacts/data_ingestion/data.zip]]
+[2025-12-07 19:27:20,410: INFO: data_ingestion: Download data from [https://drive.google.com/file/d/1h1jzZ307vV6pKkaERxFF4jn9wne9XHp7/view?usp=sharing] to :[artifacts/data_ingestion/data.zip] ]
+[2025-12-07 19:27:27,872: INFO: stage_01_data_ingestion: >>>>>> Stage Data Ingestion Stage completed <<<<<<
+
+x==========x]
+[2025-12-07 19:30:48,523: INFO: stage_02_prepare_base_model: >>>>>> Stage Prepare Base Model Stage started <<<<<<]
+[2025-12-07 19:30:48,526: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2025-12-07 19:30:48,527: INFO: common: yaml file: params.yaml loaded successfully]
+[2025-12-07 19:30:48,528: INFO: common: created directory at: artifacts]
+[2025-12-07 19:30:48,529: INFO: common: created directory at: artifacts/prepare_base_model]
+[2025-12-07 19:30:49,324: WARNING: saving_utils: Compiled the loaded model, but the compiled metrics have yet to be built. `model.compile_metrics` will be empty until you train or evaluate the model.]
+[2025-12-07 19:30:49,567: INFO: stage_02_prepare_base_model: >>>>>> Stage Prepare Base Model Stage completed <<<<<<
+
+x==========x]
+[2025-12-07 19:30:54,473: INFO: stage_03_model_training: >>>>>> Stage Model Training Stage started <<<<<<]
+[2025-12-07 19:30:54,474: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2025-12-07 19:30:54,475: INFO: common: yaml file: params.yaml loaded successfully]
+[2025-12-07 19:30:54,476: INFO: common: created directory at: artifacts]
+[2025-12-07 19:30:54,476: INFO: common: created directory at: artifacts\training]
+[2025-12-07 20:03:13,373: INFO: stage_03_model_training: >>>>>> Stage Model Training Stage completed <<<<<<
+
+x==========x]
+[2025-12-07 20:09:09,967: INFO: stage_04_model_evaluation_mlflow: >>>>>> Stage Model Evaluation with MLflow Stage started <<<<<<]
+[2025-12-07 20:09:09,970: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2025-12-07 20:09:09,972: INFO: common: yaml file: params.yaml loaded successfully]
+[2025-12-07 20:09:09,974: INFO: common: created directory at: artifacts]
+[2025-12-07 20:13:18,928: INFO: common: json file saved at: scores.json]
+[2025-12-07 20:13:18,930: INFO: common: json file saved at: scores.json]
+[2025-12-07 20:13:22,981: WARNING: save: Found untraced functions such as _jit_compiled_convolution_op, _jit_compiled_convolution_op, _jit_compiled_convolution_op, _jit_compiled_convolution_op, _jit_compiled_convolution_op while saving (showing 5 of 14). These functions will not be directly callable after loading.]
+[2025-12-07 20:13:23,364: INFO: builder_impl: Assets written to: C:\Users\adiap\AppData\Local\Temp\tmpz3zfglbv\model\data\model\assets]
+[2025-12-07 20:14:19,904: INFO: stage_04_model_evaluation_mlflow: >>>>>> Stage Model Evaluation with MLflow Stage completed <<<<<<
+
+x==========x]
+[2025-12-07 21:25:19,478: INFO: _internal: [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:8080
+ * Running on http://192.168.29.104:8080]
+[2025-12-07 21:25:19,480: INFO: _internal: [33mPress CTRL+C to quit[0m]
+[2025-12-07 21:25:27,643: INFO: _internal: 127.0.0.1 - - [07/Dec/2025 21:25:27] "GET / HTTP/1.1" 200 -]
+[2025-12-07 21:26:04,511: ERROR: app: Exception on /predict [POST]]
+Traceback (most recent call last):
+  File "D:\Python Projects\Kidney-Disease-Classification\.venv\Lib\site-packages\flask\app.py", line 2190, in wsgi_app
+    response = self.full_dispatch_request()
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Python Projects\Kidney-Disease-Classification\.venv\Lib\site-packages\flask\app.py", line 1486, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Python Projects\Kidney-Disease-Classification\.venv\Lib\site-packages\flask_cors\extension.py", line 176, in wrapped_function
+    return cors_after_request(app.make_response(f(*args, **kwargs)))
+                                                ^^^^^^^^^^^^^^^^^^
+  File "D:\Python Projects\Kidney-Disease-Classification\.venv\Lib\site-packages\flask\app.py", line 1484, in full_dispatch_request
+    rv = self.dispatch_request()
+         ^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Python Projects\Kidney-Disease-Classification\.venv\Lib\site-packages\flask\app.py", line 1469, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Python Projects\Kidney-Disease-Classification\.venv\Lib\site-packages\flask_cors\decorator.py", line 121, in wrapped_function
+    resp = make_response(f(*args, **kwargs))
+                         ^^^^^^^^^^^^^^^^^^
+  File "D:\Python Projects\Kidney-Disease-Classification\app.py", line 34, in predictRoute
+    result = clApp.classifier.predict()
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Python Projects\Kidney-Disease-Classification\src\cnnClassifier\pipeline\prediction.py", line 15, in predict
+    test_image = image.img_to_array(test_image, axis = 0)
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: img_to_array() got an unexpected keyword argument 'axis'
+[2025-12-07 21:26:04,522: INFO: _internal: 127.0.0.1 - - [07/Dec/2025 21:26:04] "[35m[1mPOST /predict HTTP/1.1[0m" 500 -]
+[2025-12-07 21:28:23,220: INFO: _internal: 127.0.0.1 - - [07/Dec/2025 21:28:23] "GET / HTTP/1.1" 200 -]
+[2025-12-07 21:28:34,331: ERROR: app: Exception on /predict [POST]]
+Traceback (most recent call last):
+  File "D:\Python Projects\Kidney-Disease-Classification\.venv\Lib\site-packages\flask\app.py", line 2190, in wsgi_app
+    response = self.full_dispatch_request()
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Python Projects\Kidney-Disease-Classification\.venv\Lib\site-packages\flask\app.py", line 1486, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Python Projects\Kidney-Disease-Classification\.venv\Lib\site-packages\flask_cors\extension.py", line 176, in wrapped_function
+    return cors_after_request(app.make_response(f(*args, **kwargs)))
+                                                ^^^^^^^^^^^^^^^^^^
+  File "D:\Python Projects\Kidney-Disease-Classification\.venv\Lib\site-packages\flask\app.py", line 1484, in full_dispatch_request
+    rv = self.dispatch_request()
+         ^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Python Projects\Kidney-Disease-Classification\.venv\Lib\site-packages\flask\app.py", line 1469, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Python Projects\Kidney-Disease-Classification\.venv\Lib\site-packages\flask_cors\decorator.py", line 121, in wrapped_function
+    resp = make_response(f(*args, **kwargs))
+                         ^^^^^^^^^^^^^^^^^^
+  File "D:\Python Projects\Kidney-Disease-Classification\app.py", line 34, in predictRoute
+    result = clApp.classifier.predict()
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Python Projects\Kidney-Disease-Classification\src\cnnClassifier\pipeline\prediction.py", line 15, in predict
+    test_image = image.img_to_array(test_image)
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: img_to_array() got an unexpected keyword argument 'axis'
+[2025-12-07 21:28:34,341: INFO: _internal: 127.0.0.1 - - [07/Dec/2025 21:28:34] "[35m[1mPOST /predict HTTP/1.1[0m" 500 -]
+[2025-12-07 21:32:16,125: INFO: _internal: 127.0.0.1 - - [07/Dec/2025 21:32:16] "GET / HTTP/1.1" 200 -]
+[2025-12-07 21:37:51,407: INFO: _internal: [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:8080
+ * Running on http://192.168.29.104:8080]
+[2025-12-07 21:37:51,407: INFO: _internal: [33mPress CTRL+C to quit[0m]
+[2025-12-07 21:38:20,331: ERROR: app: Exception on /predict [POST]]
+Traceback (most recent call last):
+  File "D:\Python Projects\Kidney-Disease-Classification\.venv\Lib\site-packages\flask\app.py", line 2190, in wsgi_app
+    response = self.full_dispatch_request()
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Python Projects\Kidney-Disease-Classification\.venv\Lib\site-packages\flask\app.py", line 1486, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Python Projects\Kidney-Disease-Classification\.venv\Lib\site-packages\flask_cors\extension.py", line 176, in wrapped_function
+    return cors_after_request(app.make_response(f(*args, **kwargs)))
+                                                ^^^^^^^^^^^^^^^^^^
+  File "D:\Python Projects\Kidney-Disease-Classification\.venv\Lib\site-packages\flask\app.py", line 1484, in full_dispatch_request
+    rv = self.dispatch_request()
+         ^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Python Projects\Kidney-Disease-Classification\.venv\Lib\site-packages\flask\app.py", line 1469, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Python Projects\Kidney-Disease-Classification\.venv\Lib\site-packages\flask_cors\decorator.py", line 121, in wrapped_function
+    resp = make_response(f(*args, **kwargs))
+                         ^^^^^^^^^^^^^^^^^^
+  File "D:\Python Projects\Kidney-Disease-Classification\app.py", line 34, in predictRoute
+    result = clApp.classifier.predict()
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Python Projects\Kidney-Disease-Classification\src\cnnClassifier\pipeline\prediction.py", line 14, in predict
+    test_image = load_img(imagename, target_size = (224,224))
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Python Projects\Kidney-Disease-Classification\.venv\Lib\site-packages\keras\utils\image_utils.py", line 423, in load_img
+    img = pil_image.open(io.BytesIO(f.read()))
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Python Projects\Kidney-Disease-Classification\.venv\Lib\site-packages\PIL\Image.py", line 3580, in open
+    raise UnidentifiedImageError(msg)
+PIL.UnidentifiedImageError: cannot identify image file <_io.BytesIO object at 0x0000020C629B4450>
+[2025-12-07 21:38:20,349: INFO: _internal: 127.0.0.1 - - [07/Dec/2025 21:38:20] "[35m[1mPOST /predict HTTP/1.1[0m" 500 -]
+[2025-12-07 21:38:23,726: INFO: _internal: 127.0.0.1 - - [07/Dec/2025 21:38:23] "GET / HTTP/1.1" 200 -]
+[2025-12-07 21:38:32,605: INFO: _internal: 127.0.0.1 - - [07/Dec/2025 21:38:32] "POST /predict HTTP/1.1" 200 -]
+[2025-12-07 21:38:48,905: INFO: _internal: 127.0.0.1 - - [07/Dec/2025 21:38:48] "POST /predict HTTP/1.1" 200 -]
+[2025-12-07 21:39:00,361: INFO: _internal: 127.0.0.1 - - [07/Dec/2025 21:39:00] "POST /predict HTTP/1.1" 200 -]
+[2025-12-07 21:39:04,018: INFO: _internal: 127.0.0.1 - - [07/Dec/2025 21:39:04] "GET / HTTP/1.1" 200 -]
+[2025-12-07 21:39:13,013: INFO: _internal: 127.0.0.1 - - [07/Dec/2025 21:39:13] "POST /predict HTTP/1.1" 200 -]
+[2025-12-07 21:39:25,314: WARNING: polymorphic_function: 5 out of the last 5 calls to <function Model.make_predict_function.<locals>.predict_function at 0x0000020C65ACD260> triggered tf.function retracing. Tracing is expensive and the excessive number of tracings could be due to (1) creating @tf.function repeatedly in a loop, (2) passing tensors with different shapes, (3) passing Python objects instead of tensors. For (1), please define your @tf.function outside of the loop. For (2), @tf.function has reduce_retracing=True option that can avoid unnecessary retracing. For (3), please refer to https://www.tensorflow.org/guide/function#controlling_retracing and https://www.tensorflow.org/api_docs/python/tf/function for  more details.]
+[2025-12-07 21:39:25,325: INFO: _internal: 127.0.0.1 - - [07/Dec/2025 21:39:25] "POST /predict HTTP/1.1" 200 -]
+[2025-12-07 21:39:38,120: WARNING: polymorphic_function: 6 out of the last 6 calls to <function Model.make_predict_function.<locals>.predict_function at 0x0000020C65ACCFE0> triggered tf.function retracing. Tracing is expensive and the excessive number of tracings could be due to (1) creating @tf.function repeatedly in a loop, (2) passing tensors with different shapes, (3) passing Python objects instead of tensors. For (1), please define your @tf.function outside of the loop. For (2), @tf.function has reduce_retracing=True option that can avoid unnecessary retracing. For (3), please refer to https://www.tensorflow.org/guide/function#controlling_retracing and https://www.tensorflow.org/api_docs/python/tf/function for  more details.]
+[2025-12-07 21:39:38,130: INFO: _internal: 127.0.0.1 - - [07/Dec/2025 21:39:38] "POST /predict HTTP/1.1" 200 -]

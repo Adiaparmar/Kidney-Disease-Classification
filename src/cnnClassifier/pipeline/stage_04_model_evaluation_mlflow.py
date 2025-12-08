@@ -17,6 +17,7 @@ class EvaluationPipeline:
       evaluation = Evaluation(evaluation_config)
       evaluation.evaluation()
       evaluation.save_score()
+      # uncomment when in development mode 
       # evaluation.log_into_mlflow()
 
 if __name__ =='__main__':
